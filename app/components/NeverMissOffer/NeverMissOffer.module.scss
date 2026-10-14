@@ -1,0 +1,99 @@
+$primary-red: #D81920;
+$dark-red: #8B0E13;
+$white: #ffffff;
+
+.neverMiss {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+    135deg,
+    rgba(216, 25, 32, 0.85),
+    rgba(139, 14, 19, 0.9)
+  ), url('/plane-wing.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  color: $white;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+
+  .input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 15px 20px;
+    color: $white;
+    font-size: 14px;
+    outline: none;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    &:first-child {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    margin-top: 2px;
+    cursor: pointer;
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.subscribeBtn {
+  background: $white;
+  color: $primary-red;
+  border: none;
+  padding: 14px 40px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 2px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 10px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
